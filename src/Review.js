@@ -20,6 +20,15 @@ const Review = () => {
         <p className="job">{job}</p>
         <p className="info">{text}</p>
 
+        <div className="button-container">
+          <button className='next-btn'>
+            <FaChevronLeft/>
+          </button>
+          <button className='prev-btn'>
+            <FaChevronRight/>
+          </button>
+        </div>
+
       </article>
   );
 };
