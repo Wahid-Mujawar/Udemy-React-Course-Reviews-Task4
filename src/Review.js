@@ -23,15 +23,19 @@ const Review = () => {
       return checkNumber(newIndex);
     })
   }
+
   const prevPerson = () => {
     setIndex((index) => {
       let newIndex = index - 1;
       return checkNumber(newIndex)
     })
   }
+
   const randomPerson = () => {
-    console.log(Math.random())
+    let randomNumber =Math.floor(Math.random() * people.length)
+    return randomNumber;
   }
+
   return (
     <article className='review'>
       <div className='img-container'>
